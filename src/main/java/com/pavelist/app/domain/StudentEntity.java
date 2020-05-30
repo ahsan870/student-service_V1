@@ -20,7 +20,7 @@ public class StudentEntity {
 	private String course;
 	
 	@Column(name="sfees")
-	private String fees;
+	private Double fees;
 	
 	
 	public Long getId() {
@@ -41,10 +41,11 @@ public class StudentEntity {
 	public void setCourse(String course) {
 		this.course = course;
 	}
-	public String getFees() {
+	
+	public Double getFees() {
 		return fees;
 	}
-	public void setFees(String fees) {
+	public void setFees(Double fees) {
 		this.fees = fees;
 	}
 	@Override
